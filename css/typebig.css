@@ -1,0 +1,27 @@
+html {
+    height: 98%;
+    width: 99%;
+}
+
+body {
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 9fr 2fr 1.75fr;
+    grid-template-columns: 1fr auto 1fr;
+    height: 100%;
+    width: 100%;
+}
+
+#input {
+    width: fit-content;
+    height: 100%;
+    border-style: none;
+    background-color: rgba(32, 60, 80, 0.5);
+    color: var(--accent-beige);
+    font-size: 5em;
+    grid-area: 2/2 / 3/3;
+}
+
+#input:focus {
+    border-style: none;
+}
