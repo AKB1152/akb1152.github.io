@@ -1,0 +1,65 @@
+/* Import Noto fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans+SC:wght@100..900&family=Noto+Sans+Symbols+2&family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* Import Material Icons*/
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+
+:root {
+	--font-standard: "Noto Sans"; 
+	--font-japanese: "Noto Sans JP"; 
+	--font-tradchin: "Noto Sans TC";
+	--font-simpchin: "Noto Sans SC"; 
+	--font-korean:   "Noto Sans KR";
+}
+
+html {
+	font-family: "Noto Sans", "Noto Sans JP", "Noto Sans SC", "Noto Sans TC", "Noto Sans KR";
+}
+
+[lang = "sc"],
+[lang = "zh"], 
+.hanzi, 
+.chinese,
+.simple-chinese {
+	font-family: "Noto Sans SC";
+}
+
+[lang = "ja"], 
+[lang = "nh"], 
+[lang = "jp"], 
+.kana, 
+.hiragana, 
+.katakana, 
+.kanji,
+.japanese {
+	font-family: "Noto Sans JP";
+}
+
+[lang = "kr"],
+.hangul, 
+.korean {
+	font-family: "Noto Sans KR";
+} 
+
+[lang = "tc"],
+[lang = "yue"] 
+.traditional-chinese {
+	font-family: "Noto Sans TC";
+}
+
+.material-symbols-outlined, 
+.symbol {
+	font-family: "Material Symbols Outlined";
+	font-variation-settings:
+	'FILL' 0,
+	'wght' 400,
+	'GRAD' 0,
+	'opsz' 24
+}
+
+.symbol {
+	text-decoration: none;
+	font-size: 1.5rem; 
+	color: #9f9f9f;
+}
+  

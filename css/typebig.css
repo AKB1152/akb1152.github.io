@@ -1,27 +1,31 @@
-html {
-    height: 98%;
-    width: 99%;
+/**
+TODO: enhance mobile support
+**/
+
+
+html, body {
+	height: 100%;
 }
 
-body {
-    overflow: hidden;
-    display: grid;
-    grid-template-rows: 9fr 2fr 1.75fr;
-    grid-template-columns: 1fr auto 1fr;
-    height: 100%;
-    width: 100%;
+#text {
+	width: 97%;
+	height: fit-content;
+	background-color: #9f9f9f0a;
+	font-size: 5rem;
+	color: var(--color-light-skin-tone); 
+	display: block;
+	margin: 15px;
+	border-radius: 16px;
+	border: none;
+	height: fit-content;
+	resize: none;
+}
+textarea:focus {
+    border: none;
+	outline: none;
 }
 
-#input {
-    width: fit-content;
-    height: 100%;
-    border-style: none;
-    background-color: rgba(32, 60, 80, 0.5);
-    color: var(--accent-beige);
-    font-size: 5em;
-    grid-area: 2/2 / 3/3;
-}
-
-#input:focus {
-    border-style: none;
+help-bubble {
+	width: 64px;
+	margin: 15px;
 }

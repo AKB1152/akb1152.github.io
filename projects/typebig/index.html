@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="/css/standard.css">
+	<link rel="stylesheet" href="/css/typebig.css">
+	<meta charset="UTF-8">
+	<title>Type It Big</title>
+	<script src="/js/typebig.js"></script>
+</head>
+<body>
+	<header>
+		<h1> Type it Big </h1>
+		<nav>
+			<a class="symbol" href="/">&#xe88a;</a>
+			<a class="symbol" href="/projects/">&#xe02f;</a> 
+			<b style="font-size: 2rem; vertical-align: sup;  font-weight: 100;">|</b>
+			<b class="symbol" onclick="document.getElementById('help').style.display = document.getElementById('help').style.display == 'none'? 'block' : 'none'">&#xE887;</b>
+		</nav>
+		<blockquote id="help" style="display: none; border-color: var(--color-red);">
+			<br> → makes you type big
+			<br> → use <kbd>U+X…X<abbr title="space"><sub>…</sub></abbr></kbd> to add Unicode Symbols 
+		</blockquote>
+	</header>
+
+	
+	<textarea id="text" autofocus onchange="update_text_area()" onkeyup="update_text_area()">
+
+	</textarea>
+
+</body>
+</html>

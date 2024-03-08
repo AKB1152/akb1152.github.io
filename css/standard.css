@@ -1,0 +1,51 @@
+@import url("fonts.css"); /*specialized file for fonts */
+@import url("colors.css"); /*specialized file for colors */
+
+body {
+    background-color: #050b0f;
+    color: #ffffff;
+}
+
+h1 {
+	color: #afaf9f; 
+	font-size: 1.75rem;
+}
+
+/* Example CSS styles */
+body {
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+}
+header {
+	background-color: #102846;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+nav ul li {
+	display: inline;
+	margin-right: 20px;
+}
+section {
+	padding: 20px;
+}
+footer {
+	background-color: #102846;
+	padding: 10px 0;
+	text-align: center;
+}
+
+details[nomarker] > summary::-webkit-details-marker {
+	display: none;
+}
+
+details[nomarker] > summary {
+	list-style-type: none;
+}
