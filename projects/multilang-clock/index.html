@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+	Todo change title, Short/Long, Languages and Dark/Light options responsively
+-->
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style\ copy.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="dropdown.css">
+	<link id="style" rel="stylesheet" href="dark.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Time in Chinese</title>
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div class="navbar">
+				<div class="dropdown">
+					<button class="dropbtn">Language
+						<i class="fa fa-caret-down"></i>
+					</button>
+					<div id="dd_container" class="dropdown-content">
+						<!--Filled in by JS-->
+					</div>
+				</div>
+				<span id="toggle_btn" onclick="toggle_short_long()">Short/Long</span>
+				<span id="style_btn" onclick="toggle_theme()">Dark/Light</span>
+			</div>
+		</nav>
+	</header>
+
+	<div id="hour"></div>
+
+	<script>
+		elem = document.getElementById("hour");
+		filldropdown()
+		setInterval(update, 250)
+	</script>
+</body>
+
+</html>

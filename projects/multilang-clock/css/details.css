@@ -1,0 +1,67 @@
+details > blockquote {
+	border-left: #333355 2px solid;
+	border-bottom-left-radius: 4.5px;
+}
+
+details > summary {
+	color: #203550;
+	font-weight: bolder;
+	font-size: 1.1rem;
+}
+
+/*important*/
+/*problem*/
+details[important] > blockquote,
+details[problem] > blockquote,  
+blockquote[important], 
+blockquote[problem] {
+    border-color: #ab5852;
+}
+
+details[important] > summary,
+details[problem] > summary {
+	color: #5b0802;
+}
+
+/*example*/
+details[example] > blockquote, 
+blockquote[example] {
+	border-color: #290348;
+}
+
+/*definition*/
+details[definition] > blockquote, 
+blockquote[definition] {
+    border-color: #004343;
+}
+
+/*syntax*/
+details[syntax] > blockquote, 
+blockquote[syntax] {
+    border-color: #e6c994;
+}
+
+/*highlight*/
+details[highlight] > blockquote, 
+blockquote[highlight] {
+    border-color: #476066;
+}
+
+/*course-lists*/
+details[course-list] > blockquote {
+	border-color: #838469;
+}
+
+details[lang-course-list] > blockquote {
+	border-color: #395e77;
+}
+
+/*proof*/
+details[proof] > blockquote, 
+blockquote[proof] {
+	border-color: #135880;
+}
+
+details[proof] > summary {
+	color: #9b800b;
+}

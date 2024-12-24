@@ -1,0 +1,30 @@
+[warn] {
+	color: #ab5852;
+    font-size: 1.225rem;
+}
+
+[problem],
+[error] {
+	color: #ab5852; 
+}
+
+[keyword]{
+    color: #003b1e;
+}
+
+[highlight]{
+	color: #344245;
+}
+
+[example] {
+	color: #203550;
+}
+
+abbr[nocss],
+a[nocss] {
+    text-decoration-style: none;
+}
+
+b[math] {
+	margin-left: 1.5rem;
+}

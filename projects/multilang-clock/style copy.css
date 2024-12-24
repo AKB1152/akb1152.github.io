@@ -1,0 +1,40 @@
+@import url("css/fonts.css");
+@import url("css/details.css");
+@import url('css/references.css');
+@import url('css/lists.css');
+@import url('css/inlinetext.css');
+@import url('css/prism.css');
+
+.page, div[page] {
+    page-break-after: always;
+}
+
+body {
+	font-family: 'Noto Sans JP';
+}
+
+.todo, b [todo] {
+	font-size: 1.25rem;
+	background-color: #ab5852;
+	color: #ffffff;
+	border-radius: 5px;
+	border: 2px solid #ab5852;
+}
+
+.zhuyi, b [zhuyi] {
+	font-size: 1.25rem;
+	background-color: #ab5852;
+	color: #ffffff;
+	border-radius: 5px;
+	border: 2px solid #ab5852;
+}
+
+@media print {
+	nav {
+		display: none;
+	}
+
+	*[noprint], .noprint {
+		display: none;
+	}
+}
