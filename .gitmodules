@@ -1,0 +1,3 @@
+[submodule ".dnd"]
+	path = .dnd
+	url = https://github.com/akb1152/DND_GreekMythology
